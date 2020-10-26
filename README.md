@@ -2,13 +2,8 @@
 
 Research
 
-alt text
-
 My original gameplay design for the project was to create a game similar to the Binding of Isaac, in which the player moves along two axes, and can shoot at enemies in all directions, with the objective of either clearing a room. The first iteration of the project was a 2D space in which the player could move in all directions with equal speed and acceleration, but this made movement feel boring. Having to defend from all sides also meant that the camera would have to be almost directly above the arena so that the player doesn’t have blind spots, which would be less visually appealing.
 
-alt text
-
-alt text
 
 I decided to change the player movement to simulate traveling on largely one axis, focusing on movement from side to side. I looked at the gameplay from both Space Invaders and Bug on a Wire, which both use side to side movement in different ways. Space Invaders has the enemies move downwards, towards the player, and the player can shoot them by firing directly upwards. Bug on a Wire, however, has gameplay centring dodging rather than attacking, as the player has no attack and instead must move out of the way of the approaching enemies. I wanted to include elements of both of these in my game, to come up with gameplay that is not entirely derivative of either game.
 
@@ -18,7 +13,6 @@ With this change in the level format, a single firing direction was all that wou
 
 Implementation
 
-alt text
 
 The game uses the NGLScene class from NGL, which draws a window and contains the function PaintGL, which is called repeatedly on a timer. This is used for the main game loop, as it is called repeatedly as the program is run. It contains a switch statement which decides whether the game is currently playing, or which menu screen should be drawn, based on the flag set in the variable m_MenuType.
 
@@ -41,12 +35,4 @@ The game could be improved visually with more complex shaders, as currently the 
 The gameplay could be extended by adding variation in the size of obstacles, and more variation in player abilities could make the game more interesting. Perhaps the most important addition, however, would be the addition of a score display either during play or at the game over screen, rather than only printing the score to the terminal.
 
 Another improvement would be to use a more accurate timer for the cooldowns, potentially via a function that counts how many times the game loop has been called since the start of the “timer”, rather than using a QTimer.
-
-References
-
-Rich, R., 2017. Firing Left. [image] Available at: https://www.gamezebo.com/2017/01/16/binding-isaac-rebirth-review-yep-still-nightmare-fuel/ [Accessed 9 June 2020].
-
-Gallagher, J., 2018. [image] Available at: https://www.denofgeek.com/games/how-space-invaders-became-a-gaming-phenomenon/ [Accessed 9 June 2020].
-
-OwlKids, 2015. [image] Available at: https://www.owlkids.com/bug-on-a-wire/ [Accessed 9 June 2020].
 
